@@ -1,6 +1,6 @@
-import Presentation from "./components/presentation/Presentation.jsx";
 import NavBar from "./components/navBar/NavBar.jsx";
 import styles from "./App.module.scss";
+import Home from "./sections/home/Home.jsx";
 
 function App() {
 
@@ -8,9 +8,9 @@ function App() {
     <>
         <NavBar />
         <div className={styles.content}>
-            <section id="Home">
-                < Presentation />
-            </section>
+            <Home />
+            <Home />
+
         </div>
     </>
   )
