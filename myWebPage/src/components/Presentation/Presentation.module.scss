@@ -1,0 +1,85 @@
+@use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
+
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  min-height: fit-content;
+  min-width: fit-content;
+  max-width: 50vw;
+  margin: 0 10vw;
+  gap: 1rem;
+}
+
+.title{
+  font-size: 3.5rem;
+  padding: 0;
+  margin: 0;
+}
+
+.myName{
+  color: $accent-color;
+}
+
+.subtitle{
+  font-size: 2rem;
+  padding: 0;
+  margin: 0;
+}
+
+.reWritablePhrase{
+  color: $accent-color;
+}
+
+.paragraphContainer{
+  display: inline;
+  min-height: fit-content;
+  width: 70%;
+  padding: 0;
+  margin: 0;
+}
+
+.paragraph{
+  font-size: 1rem;
+  padding: 0;
+  margin: 0;
+}
+
+.buttons{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  width: 100%;
+  gap: 1rem;
+  padding: 0;
+  margin: 0;
+}
+
+.primaryButton{
+  background-color: $accent-color;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.secondaryButton{
+  background-color: transparent;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid $text-color;
+  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
