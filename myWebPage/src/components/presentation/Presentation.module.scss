@@ -9,8 +9,8 @@
   min-height: fit-content;
   min-width: fit-content;
   max-width: 50vw;
-  margin: 0 10vw;
-  gap: 1rem;
+  margin: 0 0 0 10vw;
+  gap: 2rem;
 }
 
 .title{
@@ -52,7 +52,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: start;
-  width: 100%;
+  width: fit-content;
   gap: 1rem;
   padding: 0;
   margin: 0;

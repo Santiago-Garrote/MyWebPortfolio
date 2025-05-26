@@ -1,0 +1,12 @@
+@use "styles/variables" as *;
+@use "styles/mixins" as *;
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  min-width: 100vw;
+  min-height: 94vh;
+  padding: 6vh 0 0 0;
+}

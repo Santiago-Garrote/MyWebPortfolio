@@ -1,0 +1,13 @@
+@use "../../../styles/variables" as *;
+@use "../../../styles/mixins" as *;
+
+.textNavButton {
+  color: $text-color;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.active {
+  color: $accent-color;
+}
+
