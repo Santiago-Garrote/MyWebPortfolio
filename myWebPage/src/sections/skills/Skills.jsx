@@ -4,7 +4,7 @@ import Presentation from "../../components/presentation/Presentation.jsx";
 
 function Home(){
     return (
-        <section id="Home" className={styles.section}>
+        <section id="Skills" className={styles.section}>
             <Presentation />
         </section>
     )
