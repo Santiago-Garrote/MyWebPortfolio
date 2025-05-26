@@ -1,4 +1,4 @@
-import Presentation from "./components/Presentation/Presentation.jsx";
+import Presentation from "./components/presentation/Presentation.jsx";
 
 function App() {
 

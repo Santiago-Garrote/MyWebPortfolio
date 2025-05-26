@@ -1,5 +1,7 @@
 import React from 'react';
 import styles from './Presentation.module.scss';
+import PrimaryButton from "../buttons/primary/PrimaryButton.jsx";
+import SecondaryButton from "../buttons/secondary/SecondaryButton.jsx";
 
 function Presentation() {
     return (
@@ -13,8 +15,8 @@ function Presentation() {
                 </p>
             </div>
             <div className={styles.buttons}>
-                <button className={styles.primaryButton}>Download resume</button>
-                <button className={styles.secondaryButton}>Contact with me</button>
+                <PrimaryButton text="Dowload resume" onClick={() => {}}/>
+                <SecondaryButton text="Contact me" onClick={() => {}}/>
             </div>
         </div>
     )
