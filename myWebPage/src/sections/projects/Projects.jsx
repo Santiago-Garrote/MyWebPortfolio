@@ -2,6 +2,7 @@ import React from "react";
 import styles from '../Section.module.scss'
 import Presentation from "../../components/presentation/Presentation.jsx";
 import ProjectCard from "../../components/buttons/cards/projects/ProjectCard.jsx";
+import SecondaryButton from "../../components/buttons/secondary/SecondaryButton.jsx";
 
 function Home(){
     return (
