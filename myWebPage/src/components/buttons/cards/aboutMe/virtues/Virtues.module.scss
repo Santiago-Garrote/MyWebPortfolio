@@ -1,0 +1,13 @@
+@use '../../../../../styles/variables' as *;
+@use '../../../../../styles/mixins' as *;
+
+.virtues {
+  display: inline-flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 2vw;
+  align-items: center;
+  justify-content: center;
+  width: 40vw;
+}
+
