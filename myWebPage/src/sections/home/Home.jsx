@@ -5,7 +5,9 @@ import Presentation from "../../components/presentation/Presentation.jsx";
 function Home(){
     return (
         <section id="Home" className={styles.section}>
-            <Presentation />
+            <div className="container">
+                <Presentation />
+            </div>
         </section>
     )
 }

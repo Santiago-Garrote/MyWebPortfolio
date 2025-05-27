@@ -8,7 +8,7 @@ function TextNavButton({to, text}) {
             className={styles.textNavButton}
             activeClass={styles.active}
             to={to}
-            offset={-113}
+            offset={-98}
             smooth={true}
             duration={500}
             spy={true}
