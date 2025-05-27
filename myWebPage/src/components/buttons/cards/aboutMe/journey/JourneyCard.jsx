@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./JourneyCard.module.scss";
+import Tag from "../../../../tag/Tag.jsx";
 
 function JourneyCard() {
     return (
@@ -9,9 +10,9 @@ function JourneyCard() {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
             <div className={styles.tags}>
-                <p className={styles.tag}>tag 1</p>
-                <p className={styles.tag}>tag 2</p>
-                <p className={styles.tag}>tag 3</p>
+                <Tag text="Tag 1" />
+                <Tag text="Tag 2" />
+                <Tag text="Tag 3" />
             </div>
         </div>
     )

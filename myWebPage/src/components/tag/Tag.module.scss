@@ -1,0 +1,13 @@
+@use "../../styles/variables" as *;
+@use "../../styles/mixins" as *;
+
+.tag{
+  font-size: 1rem;
+  border: 1px white solid;
+  border-radius: 2rem;
+  padding: 1vh 1vw;
+  width: 5rem;
+  max-width: 7rem;
+  margin: 0.5vw;
+  text-align: center;
+}
