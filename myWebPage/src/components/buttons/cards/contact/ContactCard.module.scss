@@ -1,0 +1,90 @@
+@use "../../../../styles/variables" as *;
+@use "../../../../styles/mixins" as *;
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid white;
+  border-radius: 2rem;
+  width: 15vw;
+  height: 15vw;
+  gap: 0;
+  position: relative;
+  overflow: hidden;
+
+  box-shadow:
+          inset 0 0 8px rgba(255, 255, 255, 0.15),
+          0 4px 16px rgba(0, 0, 0, 0.25);
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -75%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+                    120deg,
+                    transparent 0%,
+                    rgba(255, 255, 255, 0) 40%,
+                    rgba(255, 255, 255, 0.2) 50%,
+                    rgba(255, 255, 255, 0) 60%,
+                    transparent 100%
+    );
+    transform: rotate(25deg);
+    opacity: 0;
+    pointer-events: none;
+    z-index: 1;
+    transition: opacity 0.3s ease;
+    animation: none;
+    will-change: transform;
+  }
+
+  > * {
+    position: relative;
+    z-index: 2;
+  }
+
+  // Looping shine while hovering
+  &:hover::before {
+    animation: metalShine 1.9s linear infinite;
+    animation-fill-mode: none;
+    opacity: 1;
+  }
+}
+
+@keyframes metalShine {
+  0% {
+    transform: translateX(-100%) rotate(25deg);
+  }
+  100% {
+    transform: translateX(100%) rotate(25deg);
+  }
+}
+
+.imageContainer {
+  display: block;
+  width: 33%;
+  height: 33%;
+  object-fit: cover;
+  align-self: center;
+  border-radius: 5rem;
+  box-shadow: 0 0 50px rgba(255, 255, 255, 0.6);
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  object-fit: cover;
+}
+
+.name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 10vh 0 0 0;
+  padding: 0;
+  text-align: center;
+}
