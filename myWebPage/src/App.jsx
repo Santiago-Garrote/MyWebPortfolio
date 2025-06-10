@@ -14,7 +14,6 @@ function App() {
         <div className={styles.content}>
             <Home />
             <About />
-            <Projects />
             <Skills />
             <Connect />
         </div>
