@@ -11,12 +11,8 @@
   border-radius: 2rem;
   height: 60vh;
   transition: all .3s ease-in-out;
+  @include shine-effect;
 }
-.card:hover{
-  transform: scale(1.05);
-  box-shadow: 0 0 15px rgba(255, 255, 255, 0.6)
-}
-
 
 .imageContainer {
   width: 100%;

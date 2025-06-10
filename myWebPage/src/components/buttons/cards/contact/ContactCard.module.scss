@@ -53,6 +53,8 @@
     animation-fill-mode: none;
     opacity: 1;
   }
+
+  @include shine-effect;
 }
 
 @keyframes metalShine {
