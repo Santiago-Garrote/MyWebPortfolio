@@ -9,7 +9,6 @@ function NavBar() {
             <div className={styles.options}>
                 <TextNavButton to={"Home"} text={"Home"} />
                 <TextNavButton to={"About"} text={"About"} />
-                <TextNavButton to={"Projects"} text={"Projects"} />
                 <TextNavButton to={"Skills"} text={"Skills"} />
                 <TextNavButton to={"Connect"} text={"Connect"} />
             </div>
